@@ -17,19 +17,6 @@ const staggerContainer = {
   }
 }
 
-const glowVariant = {
-  initial: { opacity: 0.5, scale: 1 },
-  animate: {
-    opacity: [0.5, 1, 0.5],
-    scale: [1, 1.2, 1],
-    transition: {
-      duration: 2,
-      repeat: Infinity,
-      ease: "easeInOut"
-    }
-  }
-}
-
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">

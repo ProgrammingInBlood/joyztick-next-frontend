@@ -133,7 +133,7 @@ export default function AboutPage() {
               </p>
               <p className="mt-4 text-text-secondary">
                 By fostering an inclusive environment and providing cutting-edge tools for gamers,
-                Joyztick is more than just a platform - it's a global gaming ecosystem
+                Joyztick is more than just a platform - it&apos;s a global gaming ecosystem
                 where everyone can thrive.
               </p>
             </motion.div>

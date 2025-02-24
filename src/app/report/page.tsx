@@ -1,9 +1,9 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { useState } from 'react';
 import Link from 'next/link';
-import { FaExclamationTriangle, FaUserShield, FaGamepad, FaBug, FaComments, FaChevronDown } from 'react-icons/fa';
+import { useState } from 'react';
+import { FaUserShield, FaGamepad, FaBug, FaComments, FaChevronDown } from 'react-icons/fa';
 
 const reportTypes = [
   {
@@ -95,7 +95,7 @@ export default function ReportPage() {
       setSubmitStatus('success');
       setFormData({});
       setSelectedType(null);
-    } catch (error) {
+    } catch {
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);

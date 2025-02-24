@@ -149,12 +149,12 @@ const popularQuestions = [
   {
     id: 1,
     question: 'How do I join a tournament?',
-    answer: 'To join a tournament, navigate to the Tournaments page, browse available tournaments, and click the "Register" button on the tournament you want to join. Make sure you meet the eligibility requirements and follow the registration process.',
+    answer: 'To join a tournament, navigate to the Tournaments page, browse available tournaments, and click the &quot;Register&quot; button on the tournament you want to join. Make sure you meet the eligibility requirements and follow the registration process.',
   },
   {
     id: 2,
     question: 'How do I claim tournament prizes?',
-    answer: "After winning a tournament, you'll receive a notification with instructions to claim your prize. Usually, this involves verifying your identity and providing payment information through our secure system.",
+    answer: "After winning a tournament, you&apos;ll receive a notification with instructions to claim your prize. Usually, this involves verifying your identity and providing payment information through our secure system.",
   },
   {
     id: 3,
@@ -164,7 +164,7 @@ const popularQuestions = [
   {
     id: 4,
     question: 'How can I reset my password?',
-    answer: 'Click the "Forgot Password" link on the login page, enter your email address, and follow the instructions sent to your email to reset your password.',
+    answer: 'Click the &quot;Forgot Password&quot; link on the login page, enter your email address, and follow the instructions sent to your email to reset your password.',
   },
 ];
 
@@ -278,7 +278,7 @@ export default function HelpPage() {
         >
           <h2 className="font-gaming text-2xl font-bold text-text-primary">Still Need Help?</h2>
           <p className="mt-2 text-text-secondary">
-            Can't find what you're looking for? Our support team is here to help.
+            Can&apos;t find what you&apos;re looking for? Our support team is here to help.
           </p>
           <button className="mt-6 rounded-lg bg-primary-main px-6 py-3 font-gaming text-white transition-all hover:bg-primary-light">
             Contact Support

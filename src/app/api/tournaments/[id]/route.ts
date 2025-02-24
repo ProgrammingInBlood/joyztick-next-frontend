@@ -1,4 +1,4 @@
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 
 // Mock data - In a real app, this would come from a database
 const tournaments = [
@@ -52,11 +52,12 @@ const tournaments = [
 ];
 
 export async function GET(
-  request: Request,
-  { params }: { params: { id: string } }
-) {
+  request: NextRequest,
+  { params }: { params: Promise<{ id: string }> }
+): Promise<NextResponse> {
   try {
-    const tournament = tournaments.find(t => t.id === parseInt(params.id));
+    const resolvedParams = await params;
+    const tournament = tournaments.find(t => t.id === parseInt(resolvedParams.id));
     
     if (!tournament) {
       return NextResponse.json(

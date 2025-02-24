@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
-import { FaTrophy, FaGamepad, FaUsers, FaStar, FaCog, FaEdit } from 'react-icons/fa';
+import { FaCog } from 'react-icons/fa';
 
 // Mock data - In a real app, this would come from an API
 const user = {
@@ -198,16 +198,16 @@ export default function ProfilePage() {
             </motion.div>
           </div>
 
-          {/* Quick Stats */}
+          {/* Stats */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             className="mt-12 grid grid-cols-2 gap-4 md:grid-cols-4"
           >
-            {stats.map((stat, index) => (
+            {stats.map((stat) => (
               <div
                 key={stat.label}
-                className="rounded-xl border border-neutral-gray300 bg-background-tertiary p-4 text-center"
+                className="rounded-xl border border-neutral-gray300 bg-background-tertiary p-4"
               >
                 <div className="font-gaming text-2xl font-bold text-primary-main">{stat.value}</div>
                 <div className="mt-1 text-sm text-text-secondary">{stat.label}</div>

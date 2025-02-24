@@ -121,8 +121,8 @@ export default function TermsPage() {
         >
           <h2 className="font-gaming text-2xl font-bold text-text-primary">Introduction</h2>
           <p className="mt-4 text-text-secondary">
-            These Terms of Service ("Terms") govern your access to and use of Joyztick's website,
-            services, and applications (the "Services"). Please read these Terms carefully before
+            These Terms of Service (&quot;Terms&quot;) govern your access to and use of Joyztick&apos;s website,
+            services, and applications (the &quot;Services&quot;). Please read these Terms carefully before
             using our platform. By using our Services, you agree to be bound by these Terms.
           </p>
           <div className="mt-6 flex items-center gap-2 rounded-lg bg-primary-main/10 p-4 text-primary-main">

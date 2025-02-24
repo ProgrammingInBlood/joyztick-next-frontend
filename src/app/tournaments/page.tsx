@@ -60,7 +60,10 @@ export default function TournamentsPage() {
           </h1>
           <p className="mt-4 max-w-2xl text-lg text-text-secondary">
             Join competitive gaming tournaments, showcase your skills, and win amazing prizes.
-            From amateur leagues to pro competitions, there's something for everyone.
+            From amateur leagues to pro competitions, there&apos;s something for everyone.
+          </p>
+          <p className="mt-2 text-text-secondary">
+            We&apos;re always looking for talented tournament organizers. Join our team!
           </p>
         </motion.div>
       </section>

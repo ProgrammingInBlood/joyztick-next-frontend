@@ -1,6 +1,7 @@
 import { useInfiniteQuery, useQuery } from '@tanstack/react-query';
 import { rawgApi } from '../config';
 import { Game, GameQueryParams, PaginatedResponse } from '../types';
+import { InfiniteData } from '@tanstack/react-query';
 
 const fetchGamesPage = async ({ pageParam = 1, ...params }: GameQueryParams & { pageParam?: number }): Promise<PaginatedResponse<Game>> => {
   const { data } = await rawgApi.get<PaginatedResponse<Game>>('/games', { 
@@ -10,7 +11,7 @@ const fetchGamesPage = async ({ pageParam = 1, ...params }: GameQueryParams & { 
 };
 
 export const useGames = (params: Omit<GameQueryParams, 'page'> = {}) => {
-  return useInfiniteQuery<PaginatedResponse<Game>>({
+  return useInfiniteQuery<PaginatedResponse<Game>, Error, InfiniteData<PaginatedResponse<Game>>, [string, Omit<GameQueryParams, 'page'>], number>({
     queryKey: ['games', params],
     queryFn: ({ pageParam }) => fetchGamesPage({ ...params, pageParam }),
     getNextPageParam: (lastPage) => {

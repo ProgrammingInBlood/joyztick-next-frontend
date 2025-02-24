@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 import { FaDiscord, FaReddit, FaTwitch, FaYoutube, FaTwitter } from 'react-icons/fa';
 
 const socialLinks = [
@@ -159,15 +160,12 @@ export default function CommunityPage() {
       <section className="px-4 py-24">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-6 md:grid-cols-3 lg:grid-cols-5">
-            {socialLinks.map((platform, index) => (
-              <motion.a
+            {socialLinks.map((platform) => (
+              <Link
                 key={platform.name}
                 href={platform.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
                 className="group relative overflow-hidden rounded-xl border border-neutral-gray300 bg-background-tertiary p-6 transition-all hover:-translate-y-1 hover:border-primary-main"
                 style={{ '--hover-color': platform.color } as React.CSSProperties}
               >
@@ -180,7 +178,7 @@ export default function CommunityPage() {
                 <div className="mt-4">
                   <h3 className="font-gaming text-lg font-bold text-text-primary">{platform.name}</h3>
                 </div>
-              </motion.a>
+              </Link>
             ))}
           </div>
         </div>

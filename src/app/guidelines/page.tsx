@@ -125,7 +125,7 @@ export default function GuidelinesPage() {
         >
           <h2 className="font-gaming text-2xl font-bold text-text-primary">Our Commitment</h2>
           <p className="mt-4 text-text-secondary">
-            At Joyztick, we're committed to fostering a safe, inclusive, and enjoyable environment for all gamers.
+            At Joyztick, we&apos;re committed to fostering a safe, inclusive, and enjoyable environment for all gamers.
             These guidelines help ensure our community remains a positive space where players can connect,
             compete, and share their passion for gaming.
           </p>
@@ -238,7 +238,7 @@ export default function GuidelinesPage() {
         >
           <h2 className="font-gaming text-2xl font-bold text-text-primary">Questions?</h2>
           <p className="mt-2 text-text-secondary">
-            If you have questions about our guidelines or need to report a violation,
+            If you&apos;re unsure about our guidelines or need to report a violation,
             our support team is here to help.
           </p>
           <div className="mt-6 flex justify-center gap-4">

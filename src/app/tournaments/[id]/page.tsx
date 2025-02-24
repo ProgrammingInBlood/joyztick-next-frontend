@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { FaTrophy, FaUsers, FaCalendar, FaClock, FaDiscord, FaTwitch } from 'react-icons/fa';
 import { useTournament } from '@/networks/hooks/useTournament';
 import LoadingSpinner from '@/components/LoadingSpinner';
@@ -45,9 +45,15 @@ const brackets = [
   // Add more rounds as needed
 ];
 
-export default function TournamentDetailsPage({ params }: { params: { id: string } }) {
+export default function TournamentDetailsPage({ params }: { params: Promise<{ id: string }> }) {
   const [activeTab, setActiveTab] = useState<'overview' | 'brackets' | 'participants'>('overview');
-  const { data: tournament, isLoading, error } = useTournament(params.id);
+  const [resolvedId, setResolvedId] = useState<string | null>(null);
+  
+  useEffect(() => {
+    params.then(p => setResolvedId(p.id));
+  }, [params]);
+
+  const { data: tournament, isLoading, error } = useTournament(resolvedId ?? '');
 
   const tabs = [
     { id: 'overview', label: 'Overview' },
@@ -85,7 +91,7 @@ export default function TournamentDetailsPage({ params }: { params: { id: string
       <div className="flex min-h-screen items-center justify-center bg-background-primary">
         <div className="text-center">
           <h1 className="text-2xl font-bold text-text-primary">Tournament Not Found</h1>
-          <p className="mt-2 text-text-secondary">The tournament you're looking for doesn't exist</p>
+          <p className="mt-2 text-text-secondary">The tournament you&apos;re looking for doesn&apos;t exist</p>
           <Link
             href="/tournaments"
             className="mt-4 inline-block rounded-lg bg-primary-main px-4 py-2 text-white transition-colors hover:bg-primary-dark"

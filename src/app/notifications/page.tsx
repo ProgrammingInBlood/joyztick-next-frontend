@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import Link from 'next/link';
 import { useState } from 'react';
 import { FaTrophy, FaUserPlus, FaGamepad, FaBell, FaCheck, FaTimes } from 'react-icons/fa';
 

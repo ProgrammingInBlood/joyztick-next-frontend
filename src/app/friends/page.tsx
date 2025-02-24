@@ -2,9 +2,8 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import Link from 'next/link';
 import { useState } from 'react';
-import { FaUserPlus, FaUserMinus, FaCheck, FaTimes, FaGamepad, FaSearch } from 'react-icons/fa';
+import { FaSearch, FaGamepad, FaCheck, FaTimes } from 'react-icons/fa';
 
 // Mock data - In a real app, this would come from an API
 const friends = [

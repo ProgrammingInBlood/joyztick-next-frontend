@@ -189,7 +189,7 @@ export default function PrivacyPage() {
         >
           <h2 className="font-gaming text-2xl font-bold text-text-primary">Introduction</h2>
           <p className="mt-4 text-text-secondary">
-            This Privacy Policy explains how Joyztick ("we", "our", or "us") collects, uses, shares,
+            This Privacy Policy explains how Joyztick (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) collects, uses, shares,
             and protects your personal information when you use our gaming platform and services.
             By using Joyztick, you agree to the collection and use of information in accordance with this policy.
           </p>

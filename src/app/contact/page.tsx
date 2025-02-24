@@ -69,7 +69,7 @@ export default function ContactPage() {
       await new Promise(resolve => setTimeout(resolve, 1000)); // Simulate API call
       setSubmitStatus('success');
       setFormData({ name: '', email: '', subject: '', message: '' });
-    } catch (error) {
+    } catch {
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
@@ -97,7 +97,7 @@ export default function ContactPage() {
             Get in <span className="bg-gradient-to-r from-primary-main to-primary-light bg-clip-text text-transparent">Touch</span>
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-text-secondary">
-            Have questions or need support? We're here to help! Choose your preferred
+            Have questions or need support? We&apos;re here to help! Choose your preferred
             way to reach us below.
           </p>
         </motion.div>
@@ -135,7 +135,7 @@ export default function ContactPage() {
           >
             <h2 className="font-gaming text-2xl font-bold text-text-primary">Send us a message</h2>
             <p className="mt-2 text-text-secondary">
-              Fill out the form below and we'll get back to you as soon as possible.
+              Fill out the form below and we&apos;ll get back to you as soon as possible.
             </p>
 
             <form onSubmit={handleSubmit} className="mt-8 space-y-6">
@@ -211,7 +211,7 @@ export default function ContactPage() {
 
               {submitStatus === 'success' && (
                 <div className="rounded-lg bg-green-500/10 p-4 text-center text-green-500">
-                  Message sent successfully! We'll get back to you soon.
+                  Message sent successfully! We&apos;ll get back to you soon.
                 </div>
               )}
 
