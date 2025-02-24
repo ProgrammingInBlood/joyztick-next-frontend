@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎮 Joyztick
 
-## Getting Started
+Your Ultimate Gaming Community Platform
 
-First, run the development server:
+## 🚀 About
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Joyztick is a next-generation gaming community platform that brings gamers together. Whether you're a casual player or a competitive gamer, Joyztick provides the perfect space to connect, share, and play.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Game Discovery**: Explore a vast collection of games with detailed information, ratings, and reviews
+- **Community Building**: Connect with fellow gamers who share your interests
+- **Tournament System**: Participate in competitive tournaments across various games
+- **Cross-Platform**: Available on web, iOS, and Android (coming soon)
+- **Real-time Chat**: Communicate with your gaming buddies through text and voice
+- **Custom Matches**: Create and join custom game sessions
+- **Stats Tracking**: Monitor your gaming progress and achievements
+- **Events & Updates**: Stay informed about the latest gaming events and news
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🎯 Core Values
 
-## Learn More
+- **Community First**: Built by gamers, for gamers
+- **Inclusivity**: A welcoming space for all gaming enthusiasts
+- **Innovation**: Constantly evolving with cutting-edge features
+- **Security**: Robust safety measures to ensure a positive environment
+- **Performance**: Lightning-fast experience across all devices
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Next.js 14 with App Router
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- RAWG API
+- React Query
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🎨 Design
 
-## Deploy on Vercel
+- Modern, gaming-inspired UI
+- Dark theme optimized for gamers
+- Responsive design for all devices
+- Smooth animations and transitions
+- Accessibility-focused interface
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📱 Mobile Apps
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Mobile apps are coming soon to iOS and Android! Join our waitlist to be notified when they launch.
+
+## 🔗 Links
+
+- [Website](https://joyztick.com)
+- [Discord Community](https://discord.gg/joyztick)
+- [Twitter](https://twitter.com/joyztick)
+- [YouTube](https://youtube.com/joyztick)
+
+## 🤝 Contributing
+
+We welcome contributions! Whether it's bug reports, feature requests, or code contributions, every bit helps make Joyztick better for everyone.
+
+## 📜 License
+
+Copyright © 2024 Joyztick. All rights reserved.
