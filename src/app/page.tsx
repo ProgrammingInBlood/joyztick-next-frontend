@@ -83,7 +83,7 @@ export default function Home() {
               <span className="relative z-10">Join the Adventure</span>
             </Link>
             <Link
-              href="/explore"
+              href="/games"
               className="group relative inline-flex items-center justify-center overflow-hidden rounded-xl border-2 border-primary-main bg-background-primary/50 px-8 py-4 font-gaming text-lg font-semibold text-primary-main backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:border-primary-light hover:text-primary-light"
             >
               Explore Games
