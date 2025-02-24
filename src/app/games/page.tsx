@@ -5,13 +5,12 @@ import { useGames } from '@/networks/hooks/useGames';
 import { Game } from '@/networks/types';
 import Image from 'next/image';
 import Link from 'next/link';
-import { motion, useInView } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 const ITEMS_PER_PAGE = 20;
 
 export default function GamesPage() {
   const loadMoreRef = useRef(null);
-  const isInView = useInView(loadMoreRef);
   
   const { 
     data,
